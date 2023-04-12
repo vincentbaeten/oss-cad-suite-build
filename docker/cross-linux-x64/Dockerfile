@@ -30,6 +30,7 @@ RUN set -e -x ;\
         tcl-dev \
         tk-dev \
         qtbase5-dev \
+        qtwayland5 \
         libbison-dev \
         libhidapi-dev \
         libcurl4-openssl-dev \
