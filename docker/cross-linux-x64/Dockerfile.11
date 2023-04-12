@@ -1,4 +1,4 @@
-FROM yosyshq/cross-linux-x64:1.0
+FROM ghcr.io/vincentbaeten/oss-cad-suite-build/cross-linux-x64:1.0
 
 RUN chmod -R o+w /opt/rust && RUSTUP_HOME=/opt/rust/rustup CARGO_HOME=/opt/rust/cargo rustup update
 
