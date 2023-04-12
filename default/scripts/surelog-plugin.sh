@@ -1,6 +1,10 @@
 sed -i 's,/yosyshq/share,../../yosys/yosyshq/share,g' yosys/yosyshq/bin/yosys-config
 sed -i 's,/yosyshq/include,../../yosys/yosyshq/include,g' yosys/yosyshq/bin/yosys-config
 sed -i 's,/yosyshq/lib,../../yosys/yosyshq/lib,g' yosys/yosyshq/bin/yosys-config
+sed -i 's,/yosyshq/lib,../../surelog/dev/lib,g' surelog/dev/lib/pkgconfig/Surelog.pc
+sed -i 's,/yosyshq/lib,../../surelog/dev/lib,g' surelog/dev/lib/pkgconfig/UHDM.pc
+sed -i 's,/yosyshq/include,../../surelog/dev/include,g' surelog/dev/lib/pkgconfig/Surelog.pc
+sed -i 's,/yosyshq/include,../../surelog/dev/include,g' surelog/dev/lib/pkgconfig/UHDM.pc
 mkdir -p ${OUTPUT_DIR}/yosyshq/share/yosys/plugins
 mkdir -p ${BUILD_DIR}/surelog/dev/lib/uhdm
 mkdir -p ${BUILD_DIR}/surelog/dev/lib/surelog
