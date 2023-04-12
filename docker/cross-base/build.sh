@@ -1,1 +1,1 @@
-docker build -t="yosyshq/cross-base:1.0" .
+docker build -t="ghcr.io/vincentbaeten/oss-cad-suite-build/cross-base:1.0" .
