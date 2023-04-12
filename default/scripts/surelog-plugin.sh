@@ -2,8 +2,8 @@ sed -i 's,/yosyshq/share,../../yosys/yosyshq/share,g' yosys/yosyshq/bin/yosys-co
 sed -i 's,/yosyshq/include,../../yosys/yosyshq/include,g' yosys/yosyshq/bin/yosys-config
 sed -i 's,/yosyshq/lib,../../yosys/yosyshq/lib,g' yosys/yosyshq/bin/yosys-config
 mkdir -p ${OUTPUT_DIR}/yosyshq/share/yosys/plugins
-mkdir -p ${BUILD_DIR}/surelog/dev/lib64/uhdm
-mkdir -p ${BUILD_DIR}/surelog/dev/lib64/surelog
+mkdir -p ${BUILD_DIR}/surelog/dev/lib/uhdm
+mkdir -p ${BUILD_DIR}/surelog/dev/lib/surelog
 cd surelog-plugin
 sed -i 's,DATA_DIR = \$(DESTDIR)\$(shell \$(YOSYS_CONFIG) --datdir),DATA_DIR = ${OUTPUT_DIR}/yosyshq/share/yosys,g' Makefile_plugin.common
 sed -i 's,PLUGINS_DIR = \$(DATA_DIR)/plugins,PLUGINS_DIR = ${OUTPUT_DIR}/yosyshq/share/yosys/plugins,g' Makefile_plugin.common
